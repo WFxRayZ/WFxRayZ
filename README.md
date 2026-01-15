@@ -9,6 +9,22 @@
 
 🍕 I'm a student who are enthusiastic about pursuing Computer Science with a specialization in Cybersecurity.
 
+🍕 I'm passionate about offensive security and the art of deconstruction. 
+
+🍕 I believe the best way to secure a system is to understand exactly how it breaks. \
+
+# `root@richard:~# whoami`
+
+```python
+class Mission:
+    def __init__(self):
+        self.focus = ["Ethical Hacking", "System Architecture"]
+        self.goal = "Build Stronger Digital Defenses"
+        
+    def execute(self):
+        return "Breaking to fix."
+```
+
 # Soft-Skills 🦑
 🥩 Problem Solving
 
