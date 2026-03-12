@@ -25,31 +25,5 @@ class Mission:
         return "Breaking to fix."
 ```
 
-# Soft-Skills 🦑
-🥩 Problem Solving
-
-🥩 Creativity
-
-🥩 Leadership
-
-# Skills or Programming Languages 💻
-👉🏻 C++ (Beginner)
-
-👉🏻 C (intermediate)
-
-👉🏻 Java (Beginner)
-
-👉🏻 HTML & CSS (intermediate)
-
-👉🏻 JavaScript (Beginner)
-
-👉🏻 MySQL (Beginner)
-
-👉🏻 Networking (Beginner)
-
-👉🏻 Kali Linux (Beginner)
-
-👉🏻 RedHat (Beginner)
-
 # ⚡️Pikkkkaaaaa⚡️
-<a href="https://www.youtube.com/watch?v=X89JWdJXGiQ"> <img src="https://24.media.tumblr.com/849e1217feafc74c69c52f21d821e4b9/tumblr_mnb08kJqb11rk7jz5o1_500.gif" alt="Banner"> </a>
+<a href="https://www.youtube.com/watch?v=X89JWdJXGiQ"> <img src="[https://24.media.tumblr.com/849e1217feafc74c69c52f21d821e4b9/tumblr_mnb08kJqb11rk7jz5o1_500.gif](https://giffiles.alphacoders.com/211/211439.gif)" alt="Banner"> </a>
