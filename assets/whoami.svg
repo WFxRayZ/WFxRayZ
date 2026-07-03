@@ -1,0 +1,63 @@
+<svg viewBox="0 0 900 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Animated whoami terminal banner</title>
+  <desc id="desc">A root prompt rendered as a hacker-style terminal title with twinkling pixels and a moving scan beam.</desc>
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050b08"/>
+      <stop offset="0.58" stop-color="#0d2015"/>
+      <stop offset="1" stop-color="#050b08"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00f5ff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#00f5ff" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#00f5ff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-70%" width="160%" height="240%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .frame { fill: url(#panel); stroke: #00f5ff; stroke-width: 2; }
+      .trace { stroke: #00f5ff; stroke-opacity: .18; stroke-width: 1; fill: none; }
+      .bits { fill: #49ffd4; opacity: .38; font: 700 13px Consolas, Monaco, monospace; }
+      .prompt { fill: #bdfcff; font: 700 34px Consolas, Monaco, monospace; filter: url(#glow); }
+      .hint { fill: #80ffb3; font: 700 18px Consolas, Monaco, monospace; }
+      .cursor { fill: #bdfcff; animation: blink .9s steps(2, start) infinite; }
+      .beam { fill: url(#beam); animation: sweep 3.8s ease-in-out infinite; }
+      .spark { fill: #ffffff; filter: url(#glow); transform-box: fill-box; transform-origin: center; animation: spark 2s ease-in-out infinite; }
+      .spark:nth-of-type(2n) { animation-delay: .35s; }
+      .spark:nth-of-type(3n) { animation-delay: .8s; }
+      @keyframes blink { 50% { opacity: 0; } }
+      @keyframes sweep {
+        0% { transform: translateX(-260px); opacity: 0; }
+        20%, 70% { opacity: .65; }
+        100% { transform: translateX(880px); opacity: 0; }
+      }
+      @keyframes spark {
+        0%, 100% { opacity: .12; transform: scale(.65) rotate(0deg); }
+        50% { opacity: 1; transform: scale(1.25) rotate(45deg); }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        * { animation: none !important; }
+      }
+    </style>
+  </defs>
+
+  <rect class="frame" x="18" y="18" width="864" height="124" rx="10"/>
+  <path class="trace" d="M44 116h92l28-40h84l24 28h96l36-52h84l28 36h90l30-32h136"/>
+  <rect class="beam" x="-220" y="22" width="220" height="116"/>
+  <text class="bits" x="670" y="51">01001110 01100101 01110100</text>
+  <text class="bits" x="690" y="125">00110011 01110010 01100100</text>
+
+  <path class="spark" d="M76 50l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/>
+  <path class="spark" d="M811 67l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/>
+  <circle class="spark" cx="168" cy="122" r="3"/>
+  <circle class="spark" cx="752" cy="110" r="2.5"/>
+
+  <text class="hint" x="58" y="58">IDENTITY CHECK</text>
+  <text class="prompt" x="58" y="106">root@richard:~# whoami</text>
+  <rect class="cursor" x="545" y="78" width="16" height="34" rx="2"/>
+</svg>

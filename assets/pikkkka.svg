@@ -1,0 +1,72 @@
+<svg viewBox="0 0 900 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Animated Pikkkka terminal banner</title>
+  <desc id="desc">A neon terminal banner for Pikkkkaaaaa with lightning shapes, yellow-green glow, and twinkling pixels.</desc>
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#090b05"/>
+      <stop offset="0.5" stop-color="#16200a"/>
+      <stop offset="1" stop-color="#080b05"/>
+    </linearGradient>
+    <linearGradient id="bolt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff56b"/>
+      <stop offset="1" stop-color="#38ff85"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff56b" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#fff56b" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#fff56b" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-80%" width="180%" height="260%">
+      <feGaussianBlur stdDeviation="2.6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .frame { fill: url(#panel); stroke: #dfff4d; stroke-width: 2; }
+      .line { stroke: #dfff4d; stroke-opacity: .16; stroke-width: 1; }
+      .bolt { fill: url(#bolt); filter: url(#glow); animation: zap 1.6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .bolt.right { animation-delay: .35s; }
+      .small { fill: #baff8f; font: 700 18px Consolas, Monaco, monospace; }
+      .name { fill: #fffbd1; font: 800 42px Consolas, Monaco, monospace; filter: url(#glow); }
+      .cursor { fill: #fffbd1; animation: blink 1s steps(2, start) infinite; }
+      .scan { fill: url(#scan); animation: sweep 4s ease-in-out infinite; }
+      .spark { fill: #ffffff; filter: url(#glow); transform-box: fill-box; transform-origin: center; animation: spark 2.3s ease-in-out infinite; }
+      .spark:nth-of-type(2n) { animation-delay: .4s; }
+      .spark:nth-of-type(3n) { animation-delay: .9s; }
+      @keyframes blink { 50% { opacity: 0; } }
+      @keyframes sweep {
+        0% { transform: translateX(-250px); opacity: 0; }
+        20%, 70% { opacity: .6; }
+        100% { transform: translateX(880px); opacity: 0; }
+      }
+      @keyframes spark {
+        0%, 100% { opacity: .14; transform: scale(.7); }
+        50% { opacity: 1; transform: scale(1.25); }
+      }
+      @keyframes zap {
+        0%, 100% { opacity: .72; transform: scale(1); }
+        50% { opacity: 1; transform: scale(1.08); }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        * { animation: none !important; }
+      }
+    </style>
+  </defs>
+
+  <rect class="frame" x="18" y="18" width="864" height="124" rx="10"/>
+  <path class="line" d="M54 46h780M54 114h780M96 18v124M804 18v124"/>
+  <rect class="scan" x="-210" y="22" width="220" height="116"/>
+  <path class="bolt" d="M70 36h37L91 73h30l-48 55 14-42H61z"/>
+  <path class="bolt right" d="M792 34h37l-16 38h30l-48 55 14-42h-26z"/>
+
+  <circle class="spark" cx="154" cy="48" r="3"/>
+  <circle class="spark" cx="734" cy="49" r="2.8"/>
+  <path class="spark" d="M210 121l4 9 9 4-9 4-4 9-4-9-9-4 9-4z"/>
+  <path class="spark" d="M696 114l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/>
+
+  <text class="small" x="170" y="58">./run --charge --twinkle</text>
+  <text class="name" x="170" y="111">Pikkkkaaaaa</text>
+  <rect class="cursor" x="476" y="80" width="16" height="34" rx="2"/>
+</svg>

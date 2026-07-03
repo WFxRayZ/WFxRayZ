@@ -1,0 +1,63 @@
+<svg viewBox="0 0 900 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Animated About-Me terminal banner</title>
+  <desc id="desc">A hacker-style terminal section title with green glow, scan line, blinking cursor, and twinkling pixels.</desc>
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#061109"/>
+      <stop offset="0.52" stop-color="#0a1d13"/>
+      <stop offset="1" stop-color="#07100b"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0aff8d" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#0aff8d" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#0aff8d" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-70%" width="160%" height="240%">
+      <feGaussianBlur stdDeviation="2.4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .frame { fill: url(#panel); stroke: #18f28b; stroke-width: 2; }
+      .grid { stroke: #0aff8d; stroke-opacity: .14; stroke-width: 1; }
+      .small { fill: #7cffb8; font: 700 18px Consolas, Monaco, monospace; }
+      .cmd { fill: #d8ffe8; font: 700 34px Consolas, Monaco, monospace; }
+      .accent { fill: #00ff88; font: 700 38px Consolas, Monaco, monospace; filter: url(#glow); }
+      .cursor { fill: #d8ffe8; animation: blink 1s steps(2, start) infinite; }
+      .scan { fill: url(#scan); opacity: .6; animation: sweep 4.2s ease-in-out infinite; }
+      .twinkle { fill: #d8ffe8; filter: url(#glow); transform-box: fill-box; transform-origin: center; animation: twinkle 2.4s ease-in-out infinite; }
+      .twinkle:nth-of-type(2n) { animation-delay: .45s; }
+      .twinkle:nth-of-type(3n) { animation-delay: .9s; }
+      @keyframes blink { 50% { opacity: 0; } }
+      @keyframes sweep {
+        0% { transform: translateX(-280px); opacity: 0; }
+        18%, 68% { opacity: .7; }
+        100% { transform: translateX(880px); opacity: 0; }
+      }
+      @keyframes twinkle {
+        0%, 100% { opacity: .18; transform: scale(.7); }
+        50% { opacity: 1; transform: scale(1.2); }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        * { animation: none !important; }
+      }
+    </style>
+  </defs>
+
+  <rect class="frame" x="18" y="18" width="864" height="124" rx="10"/>
+  <path class="grid" d="M60 18v124M120 18v124M180 18v124M240 18v124M300 18v124M360 18v124M420 18v124M480 18v124M540 18v124M600 18v124M660 18v124M720 18v124M780 18v124M840 18v124M18 50h864M18 82h864M18 114h864"/>
+  <rect class="scan" x="-220" y="20" width="230" height="120"/>
+
+  <circle class="twinkle" cx="64" cy="44" r="3"/>
+  <circle class="twinkle" cx="816" cy="52" r="2.6"/>
+  <circle class="twinkle" cx="764" cy="118" r="3.4"/>
+  <circle class="twinkle" cx="112" cy="118" r="2.5"/>
+  <path class="twinkle" d="M836 86l4 9 9 4-9 4-4 9-4-9-9-4 9-4z"/>
+
+  <text class="small" x="58" y="61">[richard@wfxrayz ~]$ cat profile.sec</text>
+  <text class="accent" x="58" y="108">ACCESS GRANTED:</text>
+  <text class="cmd" x="392" y="108">About-Me</text>
+  <rect class="cursor" x="584" y="80" width="16" height="34" rx="2"/>
+</svg>

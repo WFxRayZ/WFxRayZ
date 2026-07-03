@@ -4,7 +4,9 @@
 
 <h1 align="center">Hi, I'm WFxRayZ.😒 </h1> 
 
-# About-Me 
+<p align="center">
+  <img src="./assets/about-me.svg" alt="About-Me hacker terminal title">
+</p>
 🍕 I'm currently studying Bachelor of Computer Science in Cybersecurity(Hons.).
 
 🍕 THIS IS AN ACCOUNT FOR UPLOADING MY GROUP PROJECTS FROM SCHOOL OR OTHER PERSONAL INTERESTING PROJECTS.
@@ -15,7 +17,9 @@
 
 🍕 I believe the best way to secure a system is to understand exactly how it breaks. \
 
-# `root@richard:~# whoami`
+<p align="center">
+  <img src="./assets/whoami.svg" alt="root@richard whoami hacker terminal title">
+</p>
 
 ```python
 class Mission:
@@ -26,7 +30,9 @@ class Mission:
     def execute(self):
         return "Breaking to fix."
 ```
-# ⚡️Pikkkkaaaaa⚡️
+<p align="center">
+  <img src="./assets/pikkkka.svg" alt="Pikkkkaaaaa hacker lightning terminal title">
+</p>
 
 <div align="center">
     <a href="https://www.youtube.com/watch?v=XLGDrx1aYhI"> <img src="https://giffiles.alphacoders.com/211/211439.gif" alt="Banner"> </a>
