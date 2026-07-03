@@ -7,9 +7,8 @@
 <p align="center">
   <img src="./assets/about-me.svg" alt="About-Me hacker terminal title">
 </p>
-🍕 I'm currently studying Bachelor of Computer Science in Cybersecurity(Hons.).
 
-🍕 THIS IS AN ACCOUNT FOR UPLOADING MY GROUP PROJECTS FROM SCHOOL OR OTHER PERSONAL INTERESTING PROJECTS.
+🍕 I'm currently studying Bachelor of Computer Science in Cybersecurity(Hons.).
 
 🍕 I'm a student who are enthusiastic about pursuing Computer Science with a specialization in Cybersecurity.
 
