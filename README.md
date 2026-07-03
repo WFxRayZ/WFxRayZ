@@ -4,8 +4,6 @@
 
 <h1 align="center">Hi, I'm WFxRayZ.😒 </h1> 
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&duration=3000&pause=500&color=00FF00&background=0D1117&center=true&vCenter=true&width=600&lines=Initializing+System...;Access+Granted.;Welcome,+Hacker.;sudo+rm+-rf+%2F)](https://git.io/typing-svg)
-
 # About-Me 
 🍕 I'm currently studying Bachelor of Computer Science in Cybersecurity(Hons.).
 
